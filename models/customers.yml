@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: customers
+    description: Customer-level table with key stats
+    columns:
+      - name: customer_id
+        description: primary key
+        tests:
+          - unique
+          - not_null
