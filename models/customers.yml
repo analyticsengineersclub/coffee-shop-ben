@@ -9,3 +9,9 @@ models:
         tests:
           - unique
           - not_null
+      - name: first_order_at
+        description: timestamp of customer's first order
+      - name: n_orders
+        description: customer's lifetime number of orders
+        
+        
