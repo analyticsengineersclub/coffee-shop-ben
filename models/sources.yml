@@ -1,0 +1,23 @@
+```yaml
+version: 2
+
+sources:
+  - name: coffee_shop
+    project: analytics-engineers-club
+    tables:
+      - name: customers
+        description: raw customer data, one row per customer
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+
+      - name: orders
+        description: raw order data, one row per order
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+```
