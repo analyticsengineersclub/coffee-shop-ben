@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: customers
-    description: Customer-level table with key stats
+    description: '{{ doc("schema_description") }}'
     columns:
       - name: customer_id
         description: primary key
