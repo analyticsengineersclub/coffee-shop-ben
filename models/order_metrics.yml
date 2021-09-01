@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: order_metrics
+    description: '{{ doc("order_metrics_description") }}'
+    

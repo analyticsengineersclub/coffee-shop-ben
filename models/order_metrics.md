@@ -1,4 +1,4 @@
-{% docs schema_description %}
+{% docs order_metrics_description %}
 
 ### Documentation for `order_metrics` table:
 
