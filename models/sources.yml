@@ -23,3 +23,5 @@ sources:
             tests:
               - unique
               - not_null
+      - name: order_items
+        description: links orders to associated products
