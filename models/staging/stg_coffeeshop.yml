@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_coffeeshop__orders 
+    columns:
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('stg_coffeeshop__customers')
+              field: customer_id
