@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: order_item_revenues
+    description: Provides the relevant price, product category, and customer type for revenue analysis.
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: product_id 
+        tests:
+          - not_null
+      - name: price_at_order_creation
+        description: provides the product price at the time the order was created
+        #tests: 
+          #- not_null 
+      - name: order_created_at 
+        description: UTC timestamp of order creation
+        tests: 
+          - not_null 
