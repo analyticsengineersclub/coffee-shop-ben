@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: web_sessionization
+  - name: user_stitching
     description: Enforces 1:1 relationship between visitor_id and customer_id once an order has been placed
     columns:
       - name: id
