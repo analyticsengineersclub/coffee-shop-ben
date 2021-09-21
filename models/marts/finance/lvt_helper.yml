@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: lvt_helper
+    description: Cumulative revenue reported per customer, for each week since the customer's first order
+    columns:
+      - name: cumulative_revenue
+        tests:
+          - greater_than_zero

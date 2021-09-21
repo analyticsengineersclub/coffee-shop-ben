@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: web_sessionization
+    description: adds session_id to user_stitching table where a session is defined as a chain of visits not separated by a gap of more than 30 minutes
+    columns:
+      - name: session_id
+        description: visitor_id + visitor's session number 
+        tests:
+          - not_null
+          

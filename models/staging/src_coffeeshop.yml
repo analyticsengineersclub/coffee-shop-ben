@@ -48,4 +48,4 @@ sources:
               - unique
               - not_null
           - name: created_at
-              - not_null 
+              - not_null å

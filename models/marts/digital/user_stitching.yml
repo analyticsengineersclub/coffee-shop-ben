@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: user_stitching
+    description: Enforces 1:1 relationship between visitor_id and customer_id once an order has been placed
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: visitor_id
+        description: Sessionized visitor_id, see original_visitor_id for raw version
+        tests:
+          - not_null
+      - name: customer_id 
+        tests:
+          - visitor_customer_1_to_1
+      - name: original_visitor_id
+        description: The visitor_id originally associated with the session
+        tests: 
+          - not_null

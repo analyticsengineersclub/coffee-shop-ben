@@ -13,6 +13,7 @@ products as (
 
 select 
    orders.order_id 
+   ,orders.customer_id
    ,products.product_id 
    ,products.category as product_category
    ,case when row_number() over (partition by orders.customer_id order by orders.created_at) > 1 then 'Returning'
