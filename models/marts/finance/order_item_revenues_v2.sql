@@ -1,5 +1,9 @@
 {{ config(
     materialized='table',
+    partition_by={
+      "field": "customer_id",
+      "data_type": "string"
+    }
 )}}
 
 with order_items as (
