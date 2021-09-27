@@ -34,3 +34,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_new_project:
       
+
+## Fivetran `github` package configuration
+vars:
+  github_source:
+    github_database: analytics-engineers-club
+    github_schema: github
+  github__using_repo_team: false
+  github__using_issue_label: false
